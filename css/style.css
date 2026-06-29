@@ -1,0 +1,272 @@
+/* ===========================================
+   MEDITURNO - ESTILOS GENERALES
+=========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
+
+body{
+    background:#eef2f7;
+}
+
+/*=========================================
+PANEL IZQUIERDO
+=========================================*/
+
+.panel-izquierdo{
+
+    background:linear-gradient(135deg,#0d6efd,#0b5ed7);
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:60px;
+
+}
+
+.contenido{
+
+    text-align:center;
+
+    animation:fadeLeft .8s ease;
+
+}
+
+.logo{
+
+    font-size:52px;
+
+    font-weight:bold;
+
+    margin-bottom:20px;
+
+}
+
+.contenido h3{
+
+    font-weight:300;
+
+    margin-bottom:20px;
+
+}
+
+.contenido p{
+
+    font-size:18px;
+
+    line-height:28px;
+
+    margin-bottom:40px;
+
+}
+
+.imagen-principal{
+
+    width:320px;
+
+    transition:.4s;
+
+}
+
+.imagen-principal:hover{
+
+    transform:scale(1.05);
+
+}
+
+/*=========================================
+PANEL DERECHO
+=========================================*/
+
+.panel-derecho{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#f8f9fa;
+
+}
+
+/*=========================================
+LOGIN
+=========================================*/
+
+.login{
+
+    width:420px;
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:40px;
+
+    box-shadow:0 10px 35px rgba(0,0,0,.12);
+
+    animation:fadeRight .8s ease;
+
+}
+
+.login h2{
+
+    font-weight:bold;
+
+}
+
+.login p{
+
+    color:#777;
+
+}
+
+.login-icon{
+
+    font-size:60px;
+
+    color:#0d6efd;
+
+}
+
+/*=========================================
+FORMULARIOS
+=========================================*/
+
+label{
+
+    font-weight:600;
+
+    margin-bottom:6px;
+
+}
+
+.form-control{
+
+    height:50px;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+.form-control:focus{
+
+    border-color:#0d6efd;
+
+    box-shadow:0 0 0 .15rem rgba(13,110,253,.25);
+
+}
+
+/*=========================================
+BOTONES
+=========================================*/
+
+.btn-primary{
+
+    height:50px;
+
+    border-radius:10px;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 8px 18px rgba(13,110,253,.30);
+
+}
+
+/*=========================================
+CREDENCIALES
+=========================================*/
+
+small{
+
+    color:#666;
+
+    line-height:24px;
+
+}
+
+/*=========================================
+ANIMACIONES
+=========================================*/
+
+@keyframes fadeLeft{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-50px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+@keyframes fadeRight{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(50px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/*=========================================
+RESPONSIVE
+=========================================*/
+
+@media(max-width:992px){
+
+    .panel-derecho{
+
+        background:linear-gradient(135deg,#0d6efd,#0b5ed7);
+
+    }
+
+    .login{
+
+        width:95%;
+
+        margin:20px;
+
+    }
+
+}
